@@ -1,4 +1,4 @@
-<img width="1823" height="460" alt="image" src="https://github.com/user-attachments/assets/d52e9f70-b037-4fa9-8a46-0cd86a11fcb2" /># Kelompok 6
+# Kelompok 6
 1. Imelda Alexis J - 5025231032
 2. Jasmine Firdhousy M. - 5025231051
 3. Aika Thalita Rahmani - 5025231058
