@@ -1,0 +1,1922 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasAunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasCousin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasCousin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasFatherInLaw -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasFatherInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasMotherInLaw -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasMotherInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNephew -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNephew">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNiece">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasUncle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasYoungerBroter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasYoungerBroter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasYoungerSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasYoungerSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasFirstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasLastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasMariageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasMariageName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Deceased -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Deceased">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOD"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Parent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Alan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Alan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Susan"/>
+        <hasDOB>1951-06-20</hasDOB>
+        <hasFirstName>Alan</hasFirstName>
+        <hasLastName>Grant</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Ann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Ann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane"/>
+        <hasDOB>2005-12-10</hasDOB>
+        <hasFirstName>Ann</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Dave"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Hanna"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane"/>
+        <hasDOB>1975-07-14</hasDOB>
+        <hasFirstName>Bob</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Dave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Hanna"/>
+        <hasDOB>1950-03-10</hasDOB>
+        <hasFirstName>Dave</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Hanna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Hanna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasDOB>1952-05-15</hasDOB>
+        <hasFirstName>Hanna</hasFirstName>
+        <hasLastName>H</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasDOB>1976-11-01</hasDOB>
+        <hasFirstName>Jane</hasFirstName>
+        <hasLastName>J</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Janice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Janice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Scott"/>
+        <hasDOB>2022-06-14</hasDOB>
+        <hasDOD>2024-03-22</hasDOD>
+        <hasFirstName>Janice</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/John"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Mary"/>
+        <hasDOB>2003-08-30</hasDOB>
+        <hasFirstName>Jim</hasFirstName>
+        <hasLastName>Grant</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Alan"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Susan"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Mary"/>
+        <hasDOB>1978-02-22</hasDOB>
+        <hasFirstName>John</hasFirstName>
+        <hasLastName>Grant</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Mary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Mary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane"/>
+        <hasDOB>1979-04-12</hasDOB>
+        <hasFirstName>Mary</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Sarah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Scott"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Stephanie"/>
+        <hasDOB>2025-02-15</hasDOB>
+        <hasFirstName>Sarah</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Scott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Scott">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Stephanie"/>
+        <hasDOB>2002-04-18</hasDOB>
+        <hasFirstName>Scott</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Stephanie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Stephanie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasDOB>2003-03-25</hasDOB>
+        <hasFirstName>Stephanie</hasFirstName>
+        <hasLastName>S</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Sue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Sue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Bob"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Jane"/>
+        <hasDOB>2000-09-05</hasDOB>
+        <hasFirstName>Sue</hasFirstName>
+        <hasLastName>Jones</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Susan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Susan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasDOB>1953-01-30</hasDOB>
+        <hasDOD>2015-11-05</hasDOD>
+        <hasFirstName>Susan</hasFirstName>
+        <hasLastName>S</hasLastName>
+        <hasSex>F</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/John"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Mary"/>
+        <hasDOB>2006-01-07</hasDOB>
+        <hasFirstName>Tom</hasFirstName>
+        <hasLastName>Grant</hasLastName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Tommy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Tommy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Scott"/>
+        <hasParent rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Stephanie"/>
+        <hasDOB>2023-10-20</hasDOB>
+        <hasFirstName>Jones</hasFirstName>
+        <hasFirstName>Tommy</hasFirstName>
+        <hasSex>M</hasSex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/uncle">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/cousin">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/niece">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/aunt">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/spouse">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/nephew">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>6.1 hasGrandFather</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandFather"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>5.1 hasOlderBrother</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob2"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob1"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderBrother"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>8.1 hasUncle</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/uncle"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasUncle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/uncle"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>3.1 hasChild infer to Spouse</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>10 hasCousin</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/cousin"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasCousin"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/cousin"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>9.2 hasNiece</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDaughter"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/niece"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNiece"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/niece"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>8.2 hasAunt</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/aunt"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasAunt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/aunt"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>6.0 hasGrandParent</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>7.0 hasParentInLaw</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/spouse"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/spouse"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>9.1 hasNephew</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSon"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/sibling"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/nephew"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasNephew"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/nephew"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>4.1. hasBrother infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasBrother"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>3.5 Check symmetry hasSiblings</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>5.2 hasOlderSister</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDOB"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob2"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/dob1"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasOlderSister"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>2.2 hasHusband infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasHusband"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>3.3 hasSon infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSon"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>7.1 hasFatherInLaw</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasFatherInLaw"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>1.1 gender inference</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSex"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                                <swrl:argument2>F</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>1.2 gender inference 2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSex"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                                <swrl:argument2>M</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Man"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>3.4 hasSibling infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Person"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParent"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/parent"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>3.2 hasDaughter infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasChild"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasDaughter"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>6. 2 hasGrandMother</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasGrandMother"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/gp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>4.2 hasSister infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSiblings"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSister"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>2.1 hasWIfe infer</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasSpouse"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasWife"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>7.2 hasMotherInLaw</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasParentInLaw"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/hasMotherInLaw"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2025/10/untitled-ontology-32/pil"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
